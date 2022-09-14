@@ -1,0 +1,105 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>피자 주문하기</h2> <hr>
+    <table border="5" style="text-align: center">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td><img src="pizza1.jpg" width="150" height="150"></td>
+            <td><img src="pizza2.jpg" width="150" height="150"></td>
+            <td><img src="pizza3.jpg" width="150" height="150"></td>
+        </tr>
+    </table>
+    <hr>
+    고객이름: <input type="text"> <br> <br>
+    전화번호: <input type="text"> <br> <br>
+    메일주소: <input type="text"> <br> <br>
+    배달주소: <input type="text"> <br> <br>
+
+    <fieldset>
+        <legend>피자종류</legend>
+        <select name="select_pizza" multiple>
+            <option value="1_pizza">고구마피자</option>
+            <option value="2_pizza">불고기피자</option>
+            <option value="3_pizza">페페로니피자</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>피자크기</legend>
+
+        <label for="small">Small</label>
+        <input type="radio" name="ra_btn" id="small">
+        
+        <input type="radio" name="ra_btn">Medium
+        <input type="radio" name="ra_btn" checked>Large
+    </fieldset>
+
+    <form method="post" action="./server.jsp">
+        <fieldset>
+            <legend>피자 토핑 선택</legend> 
+            <label>
+                베이컨<input type="checkbox" name="chk">
+            </label>
+            <input type="checkbox" name="chk">치즈
+            <input type="checkbox" name="chk">양파
+            <input type="checkbox" name="chk">버섯
+        </fieldset> 
+        <input type="submit"><br>
+        <input type="reset">
+    </form>
+    <br> <br>
+
+    배달 요청 날짜:<input type="date"><br>
+    배달 요청 시간:<input type="time"><br>
+
+    <label>리뷰작성<br>
+        <textarea rows="3" cols="50" maxlength="10">리뷰는 이곳에 작성 해주세요.
+        </textarea>
+    </label> <br><br>
+
+    <label> 사진 올리기 </label><br>
+    <input type="file" accept="image/*" multiple><br>
+    <input type="submit">
+
+   <br><br>
+    라이더 요청사항<br>
+    <input type="text" name="req" list="request">
+    <datalist id="request">
+        <option>문 앞에 놓으세요</option>
+        <option>일회용 수저 빼주세요</option>
+        <option>초인종 눌러주세요</option>
+        <option>단무지 주지마세요</option>
+        <option>조심히 오세요</option>
+    </datalist>
+    <br>
+         
+    배달 만족도<br>
+    <input type="text" name="sat" list="sat_list">
+    <datalist id="sat_list">
+        <option>매우 빠름</option>
+        <option>빠름</option>
+        <option>보통</option>
+        <option>느림</option>
+        <option>매우느림</option>
+    </datalist><br>
+    
+    
+        
+
+</body>
+</html>

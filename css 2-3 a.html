@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{ color:blue;
+            font-style: normal;
+            font-family: sans-serif;
+        }
+        a {
+            background-color: aqua;
+        }
+        a:hover{
+            color: red;
+            background-color: beige;
+        }
+        a:focus{
+            color:blue;
+            background-color: yellow;
+        }
+        a:visited{
+            color: darkolivegreen;
+            background-color: aliceblue;
+        }
+
+        ul{
+            background-color:yellow;
+        }
+        ol{
+            background-color: gray;
+        }
+
+        ul>li:nth-child(1){
+            color: red;
+        }
+        ul>li:nth-child(1):hover
+        {
+            color:aqua;
+            background-color: black;
+            text-decoration: underline;
+            font-size: larger;
+            text-transform: capitalize;
+        }
+        ul>li:nth-child(2){
+            color: blue;
+        }
+        ul>li:nth-child(2):hover{
+            color: red;
+            background-color: beige;
+        }
+        ul>li:nth-child(3){
+            color:deeppink;
+        }
+        ul>li:nth-child(3):hover{
+            color: gray;
+            background-color: red;
+        }
+
+        ol>li:nth-child(1){
+            color:red
+        }
+        ol>li:nth-child(2){
+            color:brown
+        }
+        ol>li:nth-child(3){
+            color:aquamarine
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>여기는 첫 번째 문단 입니다.</p>
+    <a href="https:www.naver.com">네이버</a>
+
+    <ul>
+        <li> the first child </li>
+        <li> the second child</li>
+        <li> the third child</li>
+    </ul>
+
+    <ol>
+        <li> the first child </li>
+        <li> the second child</li>
+        <li> the third child</li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 style="text-align:center;color: red;">비행기 예약</h3>
+    <hr>
+    <label>
+        왕복 : <input type="radio" name="round">
+    </label>
+    <label for="round">편도 : </label>   
+    <input type="radio" name="round" id="round">
+    <br>
+    <label>좌석 등급</label>
+    <select name="seat">
+        <option value="" selected>등급 선택</option>
+        <option value="first">퍼스트</option>
+        <option value="business">비지니스</option>
+        <option value="economy">이코노미</option>
+    </select>
+    <br>
+    <fieldset>
+        <legend>출발/도착</legend>
+        출발 : <input type="text" name="dep_list" list="dep_list">
+                <datalist id="dep_list">
+                    <option value="인천공항"></option>
+                    <option value="김포공항"></option>
+                    <option value="김해공항"></option>
+                    <option value="청주공항"></option>
+                    <option value="제주공항"></option>
+                </datalist>
+                
+                <br>
+                도착 : <input type="text" name="arv_list" list="arv_list">
+                <datalist id="arv_list">
+                    <option value="인천공항"></option>
+                    <option value="김포공항"></option>
+                    <option value="김해공항"></option>
+                    <option value="청주공항"></option>
+                    <option value="제주공항"></option>
+                </datalist>
+            </fieldset>
+                <br>
+                <fieldset>
+                    <legend>인원</legend>
+                    성인 : <input type="number"><br>
+                    유아 : <input type="number">
+                </fieldset>
+
+                <br>
+                <fieldset>
+                    <legend>날짜</legend>
+                    가는날 : <input type="datetime-local"><br>
+                    오는날 : <input type="datetime-local">
+                </fieldset>
+
+                <label>리뷰</label><br>
+                <textarea rows="3" placeholder="리뷰 잘 써주세요"></textarea>
+                <br>
+                <label>수하물 무게</label>
+                <input type="range" min="1" max="20" step="1" 
+                oninput="document.getElementById('kg').innerHTML=this.value"
+                >
+                <span id="kg">0</span>
+
+
+
+    </fieldset>
+
+</body>
+</html>

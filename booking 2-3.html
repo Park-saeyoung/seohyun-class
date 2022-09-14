@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <h3 style="text-align:center;color:red;">비행기 예약</h3>
+    <hr><br>
+
+    <label>
+        왕복:<input type="radio" name="round">
+    </label>
+    <label for="round">편도:</label>
+        <input type="radio" name="round" id="round">
+    <fieldset>
+        <legend>좌석 등급</legend>
+        <select name="seat">
+            <option value="">좌석등급선택</option>
+            <option value="First">퍼스트</option>
+            <option value="Bussiness">비지니스</option>
+            <option value="Economy" selected>이코노미</option>
+        </select>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>출발/도착</legend>
+        <label>출발지</label>
+        <input type="text" name="dep_name" list="dep_name">
+        <datalist id="dep_name">
+            <option value="인천공항"></option>
+            <option value="김포공항"></option>
+            <option value="제주공항"></option>
+            <option value="청주공항"></option>
+            <option value="김해공항"></option>
+        </datalist>
+        <br>
+        <label>도착지</label>
+        <input type="text" name="arv_name" list="arv_name">
+        <datalist id="arv_name">
+            <option value="인천공항"></option>
+            <option value="김포공항"></option>
+            <option value="제주공항"></option>
+            <option value="청주공항"></option>
+            <option value="김해공항"></option>
+        </datalist>
+</fieldset>
+
+<br>
+<fieldset>
+    <legend>인원</legend>
+    성인 : <input type="number"><br>
+    유아 : <input type="number">
+</fieldset>
+<br>
+<fieldset>
+    <legend>날짜선택</legend>
+    가는날 : <input type="date"><br>
+    오는날 : <input type="datetime-local">
+</fieldset>
+<br>
+<label>리뷰</label><br>
+<textarea rows="3" placeholder="리뷰 잘 부탁드려요!"></textarea>
+<br>
+<label>수하물 무게</label>
+<input type="range" min="5" max="20" step="1" 
+oninput="document.getElementById('kg').innerHTML=this.value">
+<span id="kg">0</span>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

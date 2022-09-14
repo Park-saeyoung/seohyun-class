@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 style="text-align:center;color:red">비행기 예약</h3>
+    <hr>
+    <label>
+        왕복 : <input type="radio" name="round">
+    </label>
+    <label>
+        편도 : <input type="radio" name="round">
+    </label>
+    <br>
+    <label>좌석 등급을 선택하시오</label>
+    <select name="seat">
+        <option value="" selected>등급 선택</option>
+        <option value="First">First</option>
+        <option value="Bussiness">Business</option>
+        <option value="Economy">Economy</option>
+    </select>
+    <br>
+    <label>출발지</label>
+    <input type="text" name="dep_list" list="dep_list">
+    <datalist id="dep_list">
+        <option value="인천공항"></option>
+        <option value="김포공항"></option>
+        <option value="제주공항"></option>
+        <option value="청주공항"></option>
+        <option value="김해공항"></option>
+    </datalist>
+    <br>
+    <label>도착지</label>
+    <input type="text" name="dep_list" list="dep_list">
+    <datalist id="dep_list">
+        <option value="인천공항"></option>
+        <option value="김포공항"></option>
+        <option value="제주공항"></option>
+        <option value="청주공항"></option>
+        <option value="김해공항"></option>
+    </datalist>
+    <br>
+    <fieldset>
+    <legend>인원</legend>
+        성인 : <input type="number"><br>
+        유아 : <input type="number">
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>날짜 선택</legend>
+        가는날:<input type="date"><br>
+        오는날:<input type="datetime-local">
+    </fieldset>
+    <br>
+    <p>고객평가</p>
+    <textarea rows="3" placeholder="고객평가를 써주세요"></textarea>
+    <br>
+    <label>수화물 무게</label><br>
+    <input type="range" min="5" max="20" step="1"
+    oninput="document.getElementById('kg').innerHTML=this.value">
+    <span id="kg">0</span>
+
+
+<h3 style="text-align:center;color:brown;">호텔 예약</h3>
+    <hr>
+
+
+
+
+
+
+</body>
+</html>

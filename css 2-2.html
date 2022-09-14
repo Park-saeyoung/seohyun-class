@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        p{
+            color:red;
+            font-style: italic;
+            font-size: 20px;
+        }
+        
+        a:hover{
+            color:red;
+            font-size: 20px;
+            background-color: aquamarine;
+        }
+        a:visited{
+            color: black;
+            background-color: yellow;
+        }
+        a:focus{
+            color:blueviolet;
+            background-color: darkcyan;
+        }
+
+        li {
+          color:brown  
+        }
+
+        ul>li {
+            color:blue
+        }
+        ol>li{
+            color: rgb(0, 0, 0);
+        }
+
+        ul>li:nth-child(1){
+            color:red;
+        }
+        ul>li:nth-child(2){
+            color:red;
+        }
+        ul>li:nth-child(3){
+            color:yellow;
+        }
+        ul>li:nth-child(1):hover{
+            color:green;
+            background-color: aliceblue;
+            text-decoration: line-through;
+            font-family: '궁서체';
+            font-weight: bold;
+            text-transform:lowercase; 
+            font-size: 20pt;
+        }
+        ul>li:nth-child(2):hover{
+            color:purple;
+            background-color: rgb(16, 102, 176);
+        }
+        ul>li:nth-child(3):hover{
+            color:black;
+            background-color: rgb(16, 176, 59);
+        }
+        ol>li:nth-child(3):hover{
+            color:green;
+            background-color: aliceblue;
+            text-decoration: line-through;
+            font-family: '궁서체';
+            font-weight: bold;
+            text-transform:lowercase; 
+            font-size: 20pt;
+        }
+
+        ul{
+            display:block;
+            background-color: gray;
+            border: 1px solid red;
+        }
+        ol{
+            display: block;
+            background-color: cadetblue;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        여기는 첫 번째 문단입니다.
+    </p>
+    <div>
+        여기는 div입니다.
+    </div>
+
+    <a href="https://www.naver.com">네이버</a>
+
+    <div id="list_section">
+    <ul>
+        <li>the FIRST child</li>
+        <li>the second child</li>
+        <li>the third child</li>
+    </ul>
+    <ol>
+        <li>the first child</li>
+        <li>the second child</li>
+        <li>the third child</li>
+    </ol>
+    </div>
+</body>
+</html>
