@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <input type="range" id="a" name="ages" min="10" max="60" step="10" nam="rangeNum" list="vosettings"> -->
+
+    <form>
+        <input type="range" id="a" min="10" max="100" step="10" nam="rangeNum" list="tickmarks"
+            oninput="this.form.amountInput.value=this.value">
+
+        <datalist id="tickmarks">
+            <option value="0" label="0%"></option>
+            <option value="10"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+            <option value="40"></option>
+            <option value="50" label="50%"></option>
+            <option value="60"></option>
+            <option value="70"></option>
+            <option value="80"></option>
+            <option value="90"></option>
+            <option value="100" label="100%"></option>
+        </datalist>
+
+        <input type="number" name="amountInput" min="0" max="100" value="60"
+            oninput="this.form.amountInput.value=this.value">
+    </form>
+</body>
+
+</html>

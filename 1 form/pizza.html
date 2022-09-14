@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼(From) 연습</title>
+</head>
+
+<body>
+    <h2>피자 주문하기</h2>
+    <hr />
+    <form>
+        <p><label>고객이름 : <input name="custname"></label></p>
+        <p><label>전화번호 : <input name="phone"></label></p>
+        <p><label>메일주소 : <input type=email name="email"></label></p>
+        <p><label>배달주소 : <input type=email name="email"></label></p>
+        <fieldset>
+            <legend>피자크기</legend>
+            <label><input type=radio name=size value="small"> Small </label>
+            <label><input type=radio name=size value="medium"> Medium </label>
+            <label><input type=radio name=size value="large"> Large </label>
+        </fieldset>
+        <fieldset>
+            <legend>피자 토핑 선택</legend>
+            <label><input type=checkbox name=topping value="bacon"> 베이컨 </label>
+            <label><input type=checkbox name=topping value="cheese"> 치즈 </label>
+            <label><input type="checkbox" name=topping value="onion"> 양파 </label>
+            <label><input type="checkbox" name=topping value="mushroom"> 버섯 </label>
+        </fieldset>
+        <label>배달 요청 시간 : <input type=time min="11:00" max="21:00" step="900" name="delivery"></label>
+        <label>대발 요청 사항 : <textarea name="comments"></textarea></label>
+        <p><button>주문하기</button></p>
+    </form>
+</body>
+
+</html>
