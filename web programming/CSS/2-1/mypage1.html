@@ -17,6 +17,8 @@
             padding: 7px;
             border-right: 1em solid black;
             font-family: '고딕체';
+            box-shadow:-4px -4px;
+
         }
 
         .nav ul{
@@ -24,7 +26,7 @@
         }
         .nav{
             position: fixed;
-            top:50px;
+            top:100px;
             left:10px;
         }
         .main{
@@ -35,6 +37,24 @@
         .footer{
             position: fixed;
             bottom: 0%;
+           
+        }
+        .footer p{
+            color:rgb(131, 13, 21);
+            font-size: 10px;
+            text-align: center;
+            white-space: nowrap ;
+            /* 영역을 벗어나도 줄바꿈 안함 */
+        }
+        .logo h1{
+            display: inline-block;
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+            /* flex에서 요소들의 정렬(수평) */
+            align-items: center;
+            /* flex에서 요소들의 정렬(수직) */
         }
 
     </style>
@@ -50,7 +70,11 @@
         </ul>
     </div>
     <div class="main">
-        <h1>My Page</h1>
+        <div class="logo">
+            <img src="logo.JPG" width="40" height="30">
+            <h1>My Page</h1>
+        </div>
+        
         <p>Welcome to My page</p>
         <p>Lorem ipsum dolor sit amet consectetur 
             adipisicing elit. Aperiam repudiandae 
@@ -60,9 +84,12 @@
         </p>
     </div>
     <div class="footer">
-        <p>대한민국 경기도 성남시 분당구 서현동1-1
-           전화번호 : 010-5127-****
-        </p>
+        <hr>
+        <pre>            [13588] 경기 성남시 분당구 분당로 87 서현고등학교
+            ◈ 교무실 031-701-5993~6 /Fax : 031-702-8412
+            ◈ 행정실 031-702-8485 / Fax. 031-701-5105(근무시간: 08:40-16:40)
+             Copyright © Gyeonggido Office of Education, All Right Reserved.
+        </pre>
     </div>
 </body>
 </html>
