@@ -26,7 +26,7 @@
         }
         .nav{
             position: fixed;
-            top:100px;
+            top:120px;
             left:10px;
         }
         .main{
@@ -37,6 +37,7 @@
         .footer{
             position: fixed;
             bottom: 0%;
+            width: 100%;
            
         }
         .footer p{
@@ -56,6 +57,12 @@
             align-items: center;
             /* flex에서 요소들의 정렬(수직) */
         }
+        .photo_table{
+            border: 1px;
+        }
+        .photo_table img{
+            box-shadow: 4px 4px black;
+        }
 
     </style>
 </head>
@@ -74,6 +81,7 @@
             <img src="logo.JPG" width="40" height="30">
             <h1>My Page</h1>
         </div>
+        <hr>
         
         <p>Welcome to My page</p>
         <p>Lorem ipsum dolor sit amet consectetur 
@@ -82,6 +90,20 @@
             quasi voluptate dicta, saepe enim provident quas? Est inventore 
             molestias veniam, fugit accusantium odio cum?
         </p>
+        <div class="photo">
+            <table class="photo_table">
+                <tr>
+                    <th>발리</th>
+                    <th>하와이</th>
+                    <th>몰디브</th>
+                </tr>
+                <tr>
+                    <td><img src="bali.jpg" width="150px"></td>
+                    <td><img src="Hawaii.jpg" width="150px"></td>
+                    <td><img src="mdv.jpg" width="150px"></td>
+                </tr>
+            </table>
+        </div>
     </div>
     <div class="footer">
         <hr>
