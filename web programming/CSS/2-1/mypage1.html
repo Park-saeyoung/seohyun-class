@@ -11,7 +11,7 @@
             background-color: rgba(197, 134, 7, 0.23);
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
-        .nav li{
+        .nav_left li{
             background-color: white;
             margin: 10px 0;
             padding: 7px;
@@ -21,20 +21,24 @@
 
         }
 
-        .nav ul{
+        .nav_left ul{
             list-style: none;
         }
-        .nav{
+        .nav_left{
+            border:2px solid red;
             position: fixed;
             top:120px;
             left:10px;
         }
         .main{
+            border:2px solid blue;
             position: fixed;
             top:30px;
             left:160px;
+            width:60%;
         }
         .footer{
+            border:2px solid red;
             position: fixed;
             bottom: 0%;
             width: 100%;
@@ -51,6 +55,7 @@
             display: inline-block;
         }
         .logo {
+            border:2px solid yellow;
             display: flex;
             justify-content: center;
             /* flex에서 요소들의 정렬(수평) */
@@ -63,11 +68,20 @@
         .photo_table img{
             box-shadow: 4px 4px black;
         }
+        .nav_right{
+            border:2px solid red;
+            position:fixed;
+            left:700px;
+            top:120px;
+        }
+        .nav_right ul{
+            list-style: none;
+        }
 
     </style>
 </head>
 <body>
-    <div class="nav">
+    <div class="nav_left">
         <ul>
             <li><a href="#">HOME</a></li>
             <li><a href="#">프로필</a></li>
@@ -104,6 +118,14 @@
                 </tr>
             </table>
         </div>
+    </div>  
+    <div class="nav_right">
+        <ul>
+            <li><a href="#">자료실1</a></li>
+            <li><a href="#">자료실2</a></li>
+            <li><a href="#">자료실3</a></li>
+            <li><a href="#">질의/응답</a></li>
+        </ul>
     </div>
     <div class="footer">
         <hr>
