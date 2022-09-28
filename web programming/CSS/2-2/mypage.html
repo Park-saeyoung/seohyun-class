@@ -11,7 +11,7 @@
             background-color: rgb(196, 190, 9);
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
-        .nav li{
+        .side_left li{
             color:blue;
             background-color: white;
             margin: 10px;
@@ -19,25 +19,28 @@
             border-right: 0.8em solid black;
             font-family: '고딕체';
         }
-        .nav{
+        .side_left{
+            border:4px dotted blue;
             position:fixed ;
             top:100px;
             left:10px;
         }
-        .nav ul{
+        .side_left ul{
             list-style: none;     
         }
-        .nav li{
+        .side_left li{
             box-shadow: 4px 4px mediumspringgreen;
         }
 
         .main{
+            border:2px solid red;
             position: fixed;
             top:30px;
             left:170px;
             width:60%;
         }
         .footer{
+            border:2px solid blue;
             position: fixed;
             bottom:0px;
             color:white;
@@ -49,6 +52,7 @@
 
         }
         .logo{
+            border:4px solid yellow;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -56,7 +60,8 @@
             align-items: center;
             /* flex에서 가운데 정렬(수직) */
         }
-        .aside{
+        .side_right{
+            border:4px solid blue;
             position: fixed;
             left:800px;
             top:150px;
@@ -65,7 +70,7 @@
 </head>
 <body>
     
-    <div class="nav">
+    <div class="side_left">
         <ul>
             <li><a href="#">HOME</a></li>
             <li><a href="#">프로필</a></li>
@@ -102,7 +107,7 @@
                 </table>
             </div>
     </div>
-    <div class="aside">
+    <div class="side_right">
         <ul>
             <li>메뉴1</li>
             <li>메뉴2</li>
