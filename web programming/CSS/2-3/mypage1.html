@@ -11,16 +11,27 @@
             background-color: rgb(124, 112, 5);
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
-        .side_menu{
+        .side_left{
+            border: 2px solid blue;
+            display: inline-block;
+            /* margin-left: 0px; */
+        }
+        .side_right{
+            border: 2px solid blue;
             display: inline-block;
             /* margin-left: 0px; */
         }
         .main{
+            border: 2px solid yellow;
             display: inline-block;
-            width: 80%;
+            width: 60%;
             margin-left: 30px;
         }
         .nav{
+            list-style: none;
+        }
+        .nav_right{
+            border: 2px solid blue;
             list-style: none;
         }
         .nav li{
@@ -31,7 +42,12 @@
             font-family: '명조체';
             box-shadow: 4px 4px;
         }
+        .nav_right li{
+            margin: 8px 0;
+            padding: 0.5em;
+        }
         .footer{
+            border: 2px solid red;
             position: absolute;
             bottom: 0%;
             padding: 10px;        
@@ -48,6 +64,7 @@
             text-align: center;
         }
         .logo{
+            border: 2px solid paleturquoise;
             display:flex;
             justify-content: center;
             /* flex에서 요소의 가운데 정렬(수평) */
@@ -64,7 +81,7 @@
         </div>
         <hr>   
     </div>
-    <div class="side_menu">
+    <div class="side_left">
         <ul class="nav">
             <li><a href="#">HOME</a></li>
             <li><a href="#">프로필</a></li>
@@ -93,6 +110,15 @@
                 </tr>
             </table>
         </div>
+    </div>
+    <div class="side_right">
+        <ul class="nav_right">
+            <li><a href="#">자료실1</a></li>
+            <li><a href="#">자료실2</a></li>
+            <li><a href="#">자료실3</a></li>
+            <li><a href="#">질의/응답</a></li>
+        </ul>
+    </div>
     <div class="footer">
         <hr>
         <p>
@@ -101,7 +127,6 @@
             ◈ 행정실 031-702-8485 / Fax. 031-701-5105(근무시간: 08:40-16:40)<br>
             Copyright © Gyeonggido Office of Education, All Right Reserved.<br>
         </p>
-
     </div>
 </body>
 </html>
