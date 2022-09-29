@@ -25,17 +25,19 @@
             list-style: none;
         }
         .nav_left{
+            display: block;
             border:2px solid red;
-            position: fixed;
+            /* position: fixed;
             top:120px;
-            left:10px;
+            left:10px; */
         }
         .main{
             border:2px solid blue;
-            position: fixed;
-            top:30px;
-            left:160px;
+            /* position: fixed; */
+            /* top:30px;
+            left:160px; */
             width:60%;
+            display: block;
         }
         .footer{
             border:2px solid red;
@@ -69,18 +71,28 @@
             box-shadow: 4px 4px black;
         }
         .nav_right{
+            display: block;
             border:2px solid red;
-            position:fixed;
+            /* position:fixed;
             left:700px;
-            top:120px;
+            top:120px; */
         }
         .nav_right ul{
             list-style: none;
+        }
+        .content{
+            display: flex;
+            flex-direction: row;
         }
 
     </style>
 </head>
 <body>
+    <div class="logo">
+        <img src="logo.JPG" width="40" height="30">
+        <h1>My Page</h1>
+    </div>
+    <div class="content">
     <div class="nav_left">
         <ul>
             <li><a href="#">HOME</a></li>
@@ -91,12 +103,7 @@
         </ul>
     </div>
     <div class="main">
-        <div class="logo">
-            <img src="logo.JPG" width="40" height="30">
-            <h1>My Page</h1>
-        </div>
         <hr>
-        
         <p>Welcome to My page</p>
         <p>Lorem ipsum dolor sit amet consectetur 
             adipisicing elit. Aperiam repudiandae 
@@ -126,6 +133,7 @@
             <li><a href="#">자료실3</a></li>
             <li><a href="#">질의/응답</a></li>
         </ul>
+    </div>
     </div>
     <div class="footer">
         <hr>
