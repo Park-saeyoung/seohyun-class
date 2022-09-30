@@ -21,9 +21,10 @@
         }
         .side_left{
             border:4px dotted blue;
-            position:fixed ;
+            display: block;
+            /* position:fixed ;
             top:100px;
-            left:10px;
+            left:10px; */
         }
         .side_left ul{
             list-style: none;     
@@ -33,10 +34,11 @@
         }
 
         .main{
+            display: block;
             border:2px solid red;
-            position: fixed;
+            /* position: fixed;
             top:30px;
-            left:170px;
+            left:170px; */
             width:60%;
         }
         .footer{
@@ -61,16 +63,27 @@
             /* flex에서 가운데 정렬(수직) */
         }
         .side_right{
+            display: block;
             border:4px solid blue;
-            position: fixed;
+            /* position: fixed;
             left:800px;
-            top:150px;
+            top:150px; */
+        }
+        .content{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
     </style>
 </head>
 <body>
+    <div class="logo">
+        <img src="logo.JPG" width="40" height="40">
+        <h1>박세영</h1>
+    </div>
     
-    <div class="side_left">
+    <div class="content">
+        <div class="side_left">
         <ul>
             <li><a href="#">HOME</a></li>
             <li><a href="#">프로필</a></li>
@@ -78,13 +91,8 @@
             <li><a href="#">사진</a></li>
             <li><a href="https://www.naver.com">네이버</a></li>
         </ul>
-    </div>
-
-    <div class="main">
-        <div class="logo">
-            <img src="logo.JPG" width="40" height="40">
-            <h1>My Page</h1>
         </div>
+        <div class="main">
     <hr>
         <h3>Welcome to My Page</h3>
         <p>Lorem ipsum dolor sit amet consectetur 
@@ -106,14 +114,18 @@
                     </tr>
                 </table>
             </div>
-    </div>
-    <div class="side_right">
+        </div>
+         <div class="side_right">
         <ul>
             <li>메뉴1</li>
             <li>메뉴2</li>
             <li>메뉴3</li>
         </ul>
+        </div>
+        
     </div>
+
+
     <div class="footer">
         <hr>
         <p>[13588] 경기 성남시 분당구 분당로 87 서현고등학교<br>
