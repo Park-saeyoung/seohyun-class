@@ -74,6 +74,30 @@
             flex-direction: row;
             justify-content: space-between;
         }
+        .navi_menu{
+            border:2px solid blue;
+            display: flex;
+            height: 50px;
+            justify-content: center;
+        }
+        .navi_menu>ul{
+            width: 150px;
+            float: left;
+            list-style: none;
+            height: 50px;
+            margin: 0;
+            padding: 2px;
+        }
+
+        #sub1{
+            background-color: red;
+        }
+        #sub2{
+            background-color: gray;
+        }
+        #sub3{
+            background-color:blueviolet;
+        }
     </style>
 </head>
 <body>
@@ -81,7 +105,17 @@
         <img src="logo.JPG" width="40" height="40">
         <h1>박세영</h1>
     </div>
-    
+    <div class="navi_menu">
+        <ul id="sub1">
+            <li>서브메뉴1</li>
+        </ul>
+        <ul id="sub2">
+            <li>서브메뉴2</li>
+        </ul>
+        <ul id="sub3">
+            <li>서브메뉴3</li>
+        </ul>
+    </div>
     <div class="content">
         <div class="side_left">
         <ul>
