@@ -13,19 +13,20 @@
         }
         .side_left{
             border: 2px solid blue;
-            display: inline-block;
+            display: block;
             /* margin-left: 0px; */
         }
         .side_right{
             border: 2px solid blue;
-            display: inline-block;
+            display: block;
             /* margin-left: 0px; */
         }
         .main{
             border: 2px solid yellow;
-            display: inline-block;
-            width: 60%;
-            margin-left: 30px;
+            display: block;
+            width: 70%;
+            margin-left: 10px;
+            margin-right: 10px;
         }
         .nav{
             list-style: none;
@@ -71,6 +72,19 @@
             align-items: center;
             /* flex에서 요소의 가운데 정렬(수직)  */
         }
+        .content{
+            display: flex;
+            flex-direction: row;
+        }
+        .nav_menu{
+            display: flex;
+            border: 3px solid black;
+            justify-content: center;
+        }
+        .nav_menu>ul{
+            float: left;
+            list-style: none;
+        }
     </style>
 </head>
 <body>
@@ -81,43 +95,55 @@
         </div>
         <hr>   
     </div>
-    <div class="side_left">
-        <ul class="nav">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">프로필</a></li>
-            <li><a href="#">게시판</a></li>
-            <li><a href="#">사진</a></li>
+    <div class="nav_menu">
+        <ul>
+            <li>메뉴1</li>
+        </ul>
+        <ul>
+            <li>메뉴2</li>
+        </ul>
+        <ul>
+            <li>메뉴3<li>
         </ul>
     </div>
-    <div class="main">
-        <p>Welcom to my page</p>
-        <p>저희 홈페이지를 방문해주셔서 감사합니다.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Illo eum pariatur voluptate omnis, rerum tempora placeat
-             reiciendis 
-            repellat aut exercitationem optio accusantium ea, 
-            ipsum est quis. Maxime quos dignissimos consequatur.</p>
-            <table border="0">
-                <tr>
-                    <th>사진1</th>
-                    <th>사진2</th>
-                    <th>사진3</th>
-                </tr>
-                <tr>
-                    <td><img src="bali.jpg" width="150px" height="150px"></td>
-                    <td><img src="Hawaii.jpg" width="150px" height="150px"></td>
-                    <td><img src="mdv.jpg" width="150px" height="150px"></td>
-                </tr>
-            </table>
+    <div class="content">
+        <div class="side_left">
+            <ul class="nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">프로필</a></li>
+                <li><a href="#">게시판</a></li>
+                <li><a href="#">사진</a></li>
+            </ul>
         </div>
-    </div>
-    <div class="side_right">
-        <ul class="nav_right">
-            <li><a href="#">자료실1</a></li>
-            <li><a href="#">자료실2</a></li>
-            <li><a href="#">자료실3</a></li>
-            <li><a href="#">질의/응답</a></li>
-        </ul>
+        <div class="main">
+            <p>Welcom to my page</p>
+            <p>저희 홈페이지를 방문해주셔서 감사합니다.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Illo eum pariatur voluptate omnis, rerum tempora placeat
+                reiciendis 
+                repellat aut exercitationem optio accusantium ea, 
+                ipsum est quis. Maxime quos dignissimos consequatur.</p>
+                <table border="0">
+                    <tr>
+                        <th>사진1</th>
+                        <th>사진2</th>
+                        <th>사진3</th>
+                    </tr>
+                    <tr>
+                        <td><img src="bali.jpg" width="150px" height="150px"></td>
+                        <td><img src="Hawaii.jpg" width="150px" height="150px"></td>
+                        <td><img src="mdv.jpg" width="150px" height="150px"></td>
+                    </tr>
+                </table>
+        </div>
+        <div class="side_right">
+            <ul class="nav_right">
+                <li><a href="#">자료실1</a></li>
+                <li><a href="#">자료실2</a></li>
+                <li><a href="#">자료실3</a></li>
+                <li><a href="#">질의/응답</a></li>
+            </ul>
+        </div>
     </div>
     <div class="footer">
         <hr>
