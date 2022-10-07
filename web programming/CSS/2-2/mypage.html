@@ -98,6 +98,21 @@
         #sub3{
             background-color:blueviolet;
         }
+
+        .login{
+            display: flex;
+            flex-direction: column;
+        }
+        .login>input{
+            margin: 3px; 
+        }
+        #login_btn{
+            background-image: url(login_btn.JPG);
+            background-size: 192px 30px;
+            background-position: center;
+            border-radius: 5px;
+            border:3px solid white;
+        }
     </style>
 </head>
 <body>
@@ -150,6 +165,11 @@
             </div>
         </div>
          <div class="side_right">
+            <div class="login">
+                <input type="text" placeholder="아이디">
+                <input type="password" placeholder="비밀번호">
+                <input id="login_btn" type="submit" value="">
+            </div>
         <ul>
             <li>메뉴1</li>
             <li>메뉴2</li>
