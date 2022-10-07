@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My page</title>
+    <title>박세영</title>
     <style>
         body{
             color:purple;
@@ -85,13 +85,30 @@
             float: left;
             list-style: none;
         }
+        .login{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login>input {
+            margin: 3px;
+        }
+        #login_btn{
+            background-image: url(login_btn.jpg);
+            background-size: 190px 30px;
+            background-position: center;
+            height: 30px;
+            width: 195px;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="page_title">
         <div class="logo">
             <img src="logo.JPG" width="70px" height="50px">
-            <h1>My Page</h1>
+            <h1>박세영</h1>
         </div>
         <hr>   
     </div>
@@ -137,6 +154,11 @@
                 </table>
         </div>
         <div class="side_right">
+            <div class="login">
+                <input type="text" placeholder="아이디">
+                <input type="password" placeholder="비번">
+                <input id="login_btn" type="submit" value="">
+            </div>
             <ul class="nav_right">
                 <li><a href="#">자료실1</a></li>
                 <li><a href="#">자료실2</a></li>
