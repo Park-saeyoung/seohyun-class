@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #dropdown{
+            /* color: red; */
+            background-color: rgb(163, 24, 24);
+        }
+
+        #dropdown>ul>li{
+            float:left;
+            width:120px;
+            /* list-style: none; */
+            color:red;
+        }
+        #dropdown>ul>li>ul{
+            display: none;
+        }
+        #dropdown>ul>li>ul>li{
+            color:blue
+        }
+        #dropdown>ul>li:hover>ul{
+            display:block;
+        }
+        #dropdown>ul>li>ul{
+            width:120px;
+        }
+        #dropdown>ul>li>ul>li:hover{
+            background-color: aqua;
+        }
+        ul>li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="dropdown">
+        <ul>
+            <li>MENU1
+                <ul>
+                    <li>sub-menu1</li>
+                    <li>sub-menu2</li>
+                    <li>sub-menu3</li>
+                </ul>
+            </li>
+            <li>MENU2
+                <ul>
+                    <li>sub-menu1</li>
+                    <li>sub-menu2</li>
+                    <li>sub-menu3</li>
+                </ul>
+            </li>
+            <li>MENU3
+                <ul>
+                    <li>sub-menu1</li>
+                    <li>sub-menu2</li>
+                    <li>sub-menu3</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
