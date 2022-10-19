@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+
+        ul li{
+            list-style: none;
+        }
+        #dropdown{
+            font:bold 16px "malgun gothic";
+            width: 700px;
+            height: 50px;
+            background-color: rgb(146, 143, 143);
+            margin: 0 auto;
+            line-height: 30px;          
+            text-align: center;
+        }
+        #dropdown>ul>li{
+            float:left;
+            width: 120px;
+        }
+        #dropdown>ul>li>ul{
+            display: none;
+            font-size:14px;
+            background-color: skyblue;
+        }
+        #dropdown>ul>li:hover>ul{
+            display:block;
+        }
+        #dropdown>ul>li>ul>li:hover{
+           background: orange;
+           transition: ease 2s; 
+        }
+    </style>
+</head>
+<body>
+    <div id="dropdown">
+        <ul>
+            <li>MENU1
+                <ul>
+                    <li>submenu1</li>
+                    <li>submenu2</li>
+                    <li>submenu3</li>
+                </ul>
+            </li>
+            <li>MENU2
+                <ul>
+                    <li>submenu1</li>
+                    <li>submenu2</li>
+                    <li>submenu3</li>
+                </ul>
+            </li>
+            <li>MENU3
+                <ul>
+                    <li>submenu1</li>
+                    <li>submenu2</li>
+                    <li>submenu3</li>
+                </ul>
+            </li>
+            <li>MENU4
+                <ul>
+                    <li>submenu1</li>
+                    <li>submenu2</li>
+                    <li>submenu3</li>
+                </ul>
+            </li>
+            <li>MENU5
+                <ul>
+                    <li>submenu1</li>
+                    <li>submenu2</li>
+                    <li>submenu3</li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</body>
+</html>
