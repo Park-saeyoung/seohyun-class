@@ -8,6 +8,7 @@
     <style>
         *{
             margin:0;
+            padding:0;
         }
         ul li{
             list-style: none;
@@ -27,9 +28,16 @@
         }
         #dropdown>ul>li>ul{
             display:none;
+            background-color: rgb(31, 150, 201);
+            font:bold 14px "TIMES";
+            /* width: 80px; */
         }
         #dropdown>ul>li:hover>ul{
             display:block;
+        }
+        #dropdown>ul>li>ul>li:hover{
+            background-color: orange;
+            transition: ease 1s;
         }
     </style>
 </head>
