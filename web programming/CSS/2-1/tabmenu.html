@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tab-menu{
+            width:500px;
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .tab-menu input{
+            display: none;
+        }
+        .tab-menu label{
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid black;
+        }
+        .tab-menu label:hover{
+            cursor: pointer;
+        }
+        
+            
+    </style>
+</head>
+<body>
+    <div class="tab-menu">
+        <input type="radio" name="tab" id="tab1">
+        <label for="tab1">빨강</label>
+        <input type="radio" name="tab" id="tab2">
+        <label for="tab2">노랑</label>
+        <input type="radio" name="tab" id="tab3">
+        <label for="tab3">보라</label>
+        <input type="radio" name="tab" id="tab4" checked>
+        <label for="tab4">초록</label>
+
+        <div id="content1" class="tab-content">
+            <p>첫 번째 탭메뉴 컨텐츠</p>
+        </div>
+        <div id="content2" class="tab-content">
+            <p>두 번째 탭메뉴 컨텐츠</p>
+        </div>
+        <div id="content3" class="tab-content">
+            <p>세 번째 탭메뉴 컨텐츠</p>
+        </div>
+        <div id="content4" class="tab-content">
+            <p>네 번째 탭메뉴 컨텐츠</p>
+        </div>
+    </div>
+</body>
+</html>
