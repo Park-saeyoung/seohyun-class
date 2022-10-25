@@ -23,6 +23,38 @@
         .tab-menu label:hover{
             cursor: pointer;
         }
+        .tab-menu input:checked+label{
+            color:blue;
+        }
+        .tab-content{
+            width: 100%;
+            height: 300px;
+            border:2px solid black;
+            display: none;
+
+        }
+        #tab1:checked~#content1,
+        #tab2:checked~#content2,
+        #tab3:checked~#content3,
+        #tab4:checked~#content4{
+            display:flex;
+        }
+        .red{
+            background-color: red;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .green{
+            background-color:green;
+        }
+        .purple{
+            background-color:purple;
+        }
+
+        
+
+
     </style>
 </head>
 <body>
@@ -36,16 +68,16 @@
         <input type="radio" name="tabs" id="tab4">
         <label for="tab4">보라</label>
 
-        <div id="content1" class="tab-content">
-            <p>첫 번째(빨강) 탭 메뉴 컨텐츠</p>
+        <div id="content1" class="tab-content red">
+            <p>첫 번째(빨강) 탭 메뉴 컨텐츠 박세영</p>
         </div>
-        <div id="content2" class="tab-content">
+        <div id="content2" class="tab-content yellow">
             <p>두 번째(노랑) 탭 메뉴 컨텐츠</p>
         </div>
-        <div id="content3" class="tab-content">
+        <div id="content3" class="tab-content green">
             <p>세 번째(초록) 탭 메뉴 컨텐츠</p>
         </div>
-        <div id="content4" class="tab-content">
+        <div id="content4" class="tab-content purple">
             <p>네 번째(보라) 탭 메뉴 컨텐츠</p>
         </div>
     </div>
